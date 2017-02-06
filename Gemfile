@@ -60,3 +60,9 @@ end
 
 gem 'capybara-screenshot', :group => :test
 gem 'capybara', '~> 2.8'
+group :test do
+  gem 'database_cleaner'
+  gem 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
+  gem 'chromedriver-helper'
+end
+

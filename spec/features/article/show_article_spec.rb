@@ -9,7 +9,7 @@ feature 'show article' do
     # find(:xpath, "//a[@href='/articles/id']").click
   end
 
-  scenario 'show title and show text' do
+  scenario 'show title and show text',:js,:driver => :chrome do
     # show_in 'title', with: 'MyTitle'
     # show_in 'title', with: 'MyTitle'
     # click_on 'edit'

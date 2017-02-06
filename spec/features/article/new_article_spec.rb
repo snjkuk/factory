@@ -19,7 +19,8 @@ feature 'new article' do
   #   expect(page).to have_content 'text cant be balnk'
   #   # find(:xpath, "//a[@href='/articles/show']").click
   # end
-  scenario 'with text and with title' do
+  scenario 'with text and with title',:js,:driver => :chrome do
+
   	fill_in 'Title', with: 'Any Title'
   	fill_in 'Text', with: 'Any Text'
     click_button 'Create Article'

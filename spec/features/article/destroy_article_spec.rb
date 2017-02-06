@@ -9,7 +9,7 @@ feature 'destroy article' do
     
   end
 
-  scenario 'delete  ' do
+  scenario 'delete' ,:js,:driver => :chrome do
   	expect{@article.destroy}.to change(Article, :count).by(-1)
 
   end
